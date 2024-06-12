@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblinked_queue.a CMakeFiles/linked_queue.dir/linked_queue.c.o
-/usr/bin/ranlib liblinked_queue.a
