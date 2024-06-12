@@ -7,9 +7,11 @@
 
 #define DEBUG_INFO(info) printf("file: %s:func: %s:line %d\n%s",__FILE__,__func__,__LINE__,(info))
 
-typedef struct student{
-    char* name;
-    int ID;
+typedef struct file_info {
+    char type[32];
+    char name[32];
+    size_t size;
+    char full_path[400];
 }LQ_ELEM_TYPE;
 
 struct linked_node {

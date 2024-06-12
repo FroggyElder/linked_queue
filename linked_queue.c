@@ -92,7 +92,7 @@ bool lqOut (struct linked_queue* lq,LQ_ELEM_TYPE* data,bool (* cpData)(LQ_ELEM_T
     struct linked_node* p = lq->head->next;
     if(p==lq->tail) lq->tail=lq->head;
     lq->head->next = p->next;
-    clearData(p->data);
+    if(clearData) clearData(p->data);
     free(p);
     return true;
 }
