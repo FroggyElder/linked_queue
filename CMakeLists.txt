@@ -1,0 +1,1 @@
+add_library(linked_queue linked_queue.c)
